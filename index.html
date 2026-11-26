@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101316" />
+  <meta name="description" content="Mayank Raj — brand strategy, audience insight, content formats and marketing activation. Explore the thinking and creative work behind selected brands." />
+  <meta property="og:title" content="Mayank Raj — Marketing Strategy & Creative Direction" />
+  <meta property="og:description" content="The audience insight. The strategic move. The work in motion." />
+  <title>Mayank Raj — Marketing Strategy & Creative Direction</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="animations.js" defer></script>
+</head>
+<body>
+  <!-- Ambient Background Motion -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+  </div>
+
+  <a class="skip-link" href="#selected">Skip to projects</a>
+  <header class="site-header">
+    <div class="wrap nav-layout">
+      <a href="#top" class="wordmark" aria-label="Mayank Raj, home">MAYANK <span>RAJ<span class="wordmark-dot">.</span></span></a>
+      <button class="mobile-menu" id="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
+      <nav id="primary-nav" class="main-nav" aria-label="Main navigation">
+        <a href="#selected">Selected work</a>
+        <a href="#projects">All projects</a>
+        <a href="#approach">My approach</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="nav-contact" data-magnetic>Get in touch <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-heading">
+      <div class="hero-main">
+        <p class="eyebrow anim-fade-up"><span class="mini-dot"></span> MARKETING STRATEGY / CREATIVE DIRECTION / BRAND BUILDING</p>
+        <h1 id="hero-heading" class="anim-split-text">Every brand has a story.<br><em>I find the angle.</em></h1>
+        <p class="hero-lede anim-fade-up" data-delay="180">I'm Mayank Raj — a marketing professional and agency founder developing audience-led content strategies across startups, interiors, materials and B2B businesses.</p>
+        <p class="hero-secondary anim-fade-up" data-delay="300">This portfolio is about the decisions behind the work: the insight, the creative format, and how each idea was brought to life.</p>
+        <div class="hero-actions anim-fade-up" data-delay="420">
+          <a href="#selected" class="button button-primary" data-magnetic>Explore the work <span aria-hidden="true">↗</span></a>
+          <a href="#experience" class="button button-ghost" data-magnetic>My experience <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-footnote anim-fade-up" data-delay="520"><span class="online-dot"></span> Based in London, UK <span>/</span> MSc Business Intelligence & Digital Marketing, Brunel University London</div>
+      </div>
+      <div class="hero-showcase anim-scale-in" id="hero-deck" aria-label="Interactive stack of featured brand film previews — click to cycle">
+        <div class="showcase-word">THINK <span>→</span> MAKE</div>
+        <div class="showcase-frame showcase-a slot-back anim-tilt-in" data-delay="150" data-slot="0" role="button" tabindex="0" aria-label="Cycle featured film cards: Kalpavruksh">
+          <img src="assets/posters/kalpavruksh.webp" alt="Kalpavruksh brand video preview" />
+          <span>01 / CONVERSATIONS</span>
+        </div>
+        <div class="showcase-frame showcase-b slot-mid anim-tilt-in" data-delay="300" data-slot="1" role="button" tabindex="0" aria-label="Cycle featured film cards: Inderson">
+          <img src="assets/posters/inderson.webp" alt="Inderson manufacturing film preview" />
+          <span>02 / INDUSTRIAL STORIES</span>
+        </div>
+        <div class="showcase-frame showcase-c slot-front anim-tilt-in" data-delay="450" data-slot="2" role="button" tabindex="0" aria-label="Cycle featured film cards: Studio Stitch">
+          <img src="assets/posters/studio-stitch.webp" alt="Studio Stitch interior film preview" />
+          <span>03 / TRANSFORMATIONS</span>
+        </div>
+        <div class="showcase-caption anim-fade-up" data-delay="550">A different creative language for every audience.</div>
+      </div>
+    </section>
+
+    <div class="statement-bar anim-slide-left"><div class="wrap statement-inner"><span class="statement-symbol anim-spin">✳</span><span>Not a template for every client.</span><span class="statement-right">A distinct strategy for every brand.</span></div></div>
+
+    <section class="section wrap" id="selected" aria-labelledby="selected-title">
+      <div class="section-header">
+        <div><p class="index-label anim-fade-up">01 / SELECTED THINKING</p><h2 id="selected-title" class="anim-fade-up" data-delay="80">The strategy <em>behind the story.</em></h2></div>
+        <p class="anim-fade-up" data-delay="160">Five different business challenges. Five distinct approaches. Explore what I noticed, how I shaped the content, and the work that followed.</p>
+      </div>
+      <div class="featured-grid" id="featured-grid"></div>
+      <div class="section-foot anim-fade-up"><span>A selection across startup marketing, founder-led content and industrial storytelling.</span><a href="#projects" class="inline-link">Explore every brand <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="manifesto" id="approach">
+      <div class="wrap manifesto-inner">
+        <div><p class="index-label anim-fade-up">02 / MY APPROACH</p><h2 class="anim-fade-up" data-delay="80">The best content doesn't begin with a camera.<br><em>It begins with a point of view.</em></h2></div>
+        <div class="approach-grid">
+          <article class="anim-fade-up" data-delay="0"><span class="approach-num">01</span><h3>Understand the audience.</h3><p>Find the real buyer, decision-maker, cultural context and reason to pay attention.</p></article>
+          <article class="anim-fade-up" data-delay="120"><span class="approach-num">02</span><h3>Design the format.</h3><p>Choose an editorial device that belongs to the brand: a dialogue, a founder's voice, a heritage film or a practical series.</p></article>
+          <article class="anim-fade-up" data-delay="240"><span class="approach-num">03</span><h3>Make it matter.</h3><p>Connect creative execution to the audience journey and review the available response without overstating attribution.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="projects" aria-labelledby="archive-title">
+      <div class="section-header">
+        <div><p class="index-label anim-fade-up">03 / MORE BRAND STORIES</p><h2 id="archive-title" class="anim-fade-up" data-delay="80">One perspective.<br><em>Many industries.</em></h2></div>
+        <p class="anim-fade-up" data-delay="160">Filter by marketing discipline, then open any brand for the thinking, relevant films and contextual account material.</p>
+      </div>
+      <div class="archive-toolbar anim-fade-up">
+        <div class="filter-row" aria-label="Project filters" role="group">
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All work</button>
+          <button class="filter-button" type="button" data-filter="story" aria-pressed="false">Brand storytelling</button>
+          <button class="filter-button" type="button" data-filter="growth" aria-pressed="false">Growth & activation</button>
+          <button class="filter-button" type="button" data-filter="industry" aria-pressed="false">Industrial</button>
+          <button class="filter-button" type="button" data-filter="digital" aria-pressed="false">Digital product</button>
+          <button class="filter-button" type="button" data-filter="trade" aria-pressed="false">B2B / retail</button>
+          <button class="filter-button" type="button" data-filter="creative" aria-pressed="false">Films</button>
+        </div>
+        <label class="search-label"><span aria-hidden="true">⌕</span><input type="search" id="brand-search" placeholder="Search brands or strategies" aria-label="Search portfolio projects" /></label>
+      </div>
+      <div class="archive-count" id="result-count" aria-live="polite"></div>
+      <div id="archive-grid" class="archive-grid"></div>
+      <div class="archive-expand-wrap" id="archive-expand-wrap" hidden>
+        <button type="button" class="archive-expand-btn" id="archive-expand-btn" data-magnetic>Show all brands <span aria-hidden="true">↓</span></button>
+      </div>
+    </section>
+
+    <section class="career-section path-section" id="experience" aria-labelledby="path-title">
+      <div class="wrap">
+        <div class="path-head">
+          <div class="path-head-left">
+            <span class="path-kicker anim-fade-up">[04]</span>
+            <h2 id="path-title" class="anim-fade-up" data-delay="80">The Path.</h2>
+          </div>
+          <p class="path-intro anim-fade-up" data-delay="160">From London to the front lines of consumer brands — a history of guiding high-growth companies through strategy, content, and execution.</p>
+        </div>
+        <div class="path-table" id="career-list">
+          <article class="path-row anim-card-enter">
+            <div class="path-when">2023 — Present</div>
+            <div class="path-who">
+              <h3>Lead Brand Strategist &amp; Creative Director</h3>
+              <span class="path-co">Bigshot Digital Solutions</span>
+            </div>
+            <div class="path-what">
+              <p>End-to-end creative campaigns, identity architecture, and high-retention reel pipelines for 10+ consumer brands in lifestyle, ayurveda, and hospitality.</p>
+            </div>
+          </article>
+          <article class="path-row anim-card-enter">
+            <div class="path-when">2022 — 2023</div>
+            <div class="path-who">
+              <h3>Growth &amp; Hyperlocal Marketing Lead</h3>
+              <span class="path-co">Habit</span>
+            </div>
+            <div class="path-what">
+              <p>Designed the 2–4 km radius hyperlocal consumer acquisition framework. Orchestrated community activation, localized content formats, and viral neighborhood adoption.</p>
+            </div>
+          </article>
+          <article class="path-row anim-card-enter">
+            <div class="path-when">2021 — 2022</div>
+            <div class="path-who">
+              <h3>Brand Consultant &amp; Creative Strategist</h3>
+              <span class="path-co">Brand Your Work</span>
+            </div>
+            <div class="path-what">
+              <p>Strategic direction for emerging D2C brands — naming, packaging design guidelines, and go-to-market storytelling.</p>
+            </div>
+          </article>
+          <article class="path-row anim-card-enter">
+            <div class="path-when">Academic</div>
+            <div class="path-who">
+              <h3>Design, Innovation &amp; Brand Strategy</h3>
+              <span class="path-co">Brunel University London</span>
+            </div>
+            <div class="path-what">
+              <p>Advanced studies in design methodologies, human-centered systems, and strategic innovation — London, United Kingdom.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="wrap about-inner">
+        <div><p class="index-label anim-fade-up">05 / A LITTLE ABOUT ME</p><h2 class="anim-fade-up" data-delay="80">Built in India.<br><em>Building in the UK.</em></h2></div>
+        <div class="about-copy anim-fade-up" data-delay="160"><p>I work at the intersection of <strong>commercial understanding, creative direction and practical marketing.</strong> I founded Bigshot Digital Solutions in India and am pursuing an MSc in Business Intelligence &amp; Digital Marketing at Brunel University London.</p><p>I'm particularly interested in marketing teams that value sharp audience insight, original content formats and evidence-informed decisions.</p><div class="skill-cloud"><span>Content strategy</span><span>Brand positioning</span><span>Founder storytelling</span><span>Offline activation</span><span>Creative direction</span><span>Marketing analytics</span></div></div>
+      </div>
+    </section>
+
+    <section class="contact-section wrap" id="contact" aria-labelledby="contact-heading">
+      <div class="contact-block">
+        <div class="contact-kicker anim-fade-up">
+          <span class="online-dot"></span>
+          <span>OPEN FOR SELECT COMMISSIONS — 2026 / 27</span>
+        </div>
+        <h2 id="contact-heading" class="contact-title anim-fade-up" data-delay="80">
+          Let's create something<br>
+          <em class="accent-word">unforgettable.</em>
+        </h2>
+        <p class="contact-sub anim-fade-up" data-delay="160">
+          Available for brand strategy direction, commercial video production, and high-stakes identity launches.
+        </p>
+        <div class="contact-grid anim-fade-up" data-delay="220">
+          <a href="mailto:hello@mayankraj.design" class="c-box" data-magnetic>
+            <span class="c-box__label">Email</span>
+            <span class="c-box__val">hello@mayankraj.design</span>
+            <span class="c-box__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a href="https://linkedin.com/in/mayankraj" target="_blank" rel="noopener noreferrer" class="c-box" data-magnetic>
+            <span class="c-box__label">LinkedIn</span>
+            <span class="c-box__val">linkedin.com/in/mayankraj</span>
+            <span class="c-box__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a href="https://instagram.com/mayankraj.creative" target="_blank" rel="noopener noreferrer" class="c-box" data-magnetic>
+            <span class="c-box__label">Instagram</span>
+            <span class="c-box__val">@mayankraj.creative</span>
+            <span class="c-box__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-layout"><span>MAYANK RAJ <span class="wordmark-dot">✳</span></span><span>Marketing strategy / creative direction</span><a href="#top">BACK TO TOP ↑</a></div></footer>
+
+  <!-- Case Study Modal Overlay (non-top-layer so custom cursor & click effects stay visible above it) -->
+  <div id="project-dialog" class="modal-overlay project-modal-overlay" role="dialog" aria-modal="true" aria-label="Brand case study" hidden>
+    <div class="modal-shell project-shell" tabindex="-1">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <button class="back-button" type="button" id="back-project" aria-label="Back to portfolio">
+            <span class="btn-arrow">←</span> Back
+          </button>
+          <span class="modal-breadcrumb" id="modal-breadcrumb">MAYANK RAJ / CASE STUDY</span>
+        </div>
+        <button class="close-button" type="button" id="close-project" aria-label="Close case study">
+          Close <span aria-hidden="true">×</span>
+        </button>
+        <div class="modal-progress-track" aria-hidden="true"><div class="modal-progress-bar" id="modal-progress-bar"></div></div>
+      </div>
+      <div id="project-detail" class="project-detail"></div>
+    </div>
+  </div>
+
+  <!-- Video Player Modal Overlay -->
+  <div id="player-dialog" class="modal-overlay media-modal-overlay" role="dialog" aria-modal="true" aria-label="Play campaign film" hidden>
+    <div class="modal-shell player-shell" tabindex="-1">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <button class="back-button" type="button" id="back-player" aria-label="Back to case study"><span class="btn-arrow">←</span> Back</button>
+          <span class="modal-breadcrumb" id="player-heading">CAMPAIGN FILM</span>
+        </div>
+        <button class="close-button" type="button" id="close-player" aria-label="Close video player">Close <span aria-hidden="true">×</span></button>
+      </div>
+      <div class="player-inner" id="video-player"></div>
+    </div>
+  </div>
+
+  <!-- Image Lightbox Modal Overlay -->
+  <div id="image-dialog" class="modal-overlay media-modal-overlay" role="dialog" aria-modal="true" aria-label="Instagram Insights screenshot" hidden>
+    <div class="modal-shell image-shell" tabindex="-1">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <button class="back-button" type="button" id="back-image" aria-label="Back to case study"><span class="btn-arrow">←</span> Back</button>
+          <span class="modal-breadcrumb" id="image-heading">SOURCE IMAGE</span>
+        </div>
+        <button class="close-button" type="button" id="close-image" aria-label="Close image viewer">Close <span aria-hidden="true">×</span></button>
+      </div>
+      <div id="image-viewer"></div>
+    </div>
+  </div>
+
+  <!-- Mouse Ripple & Custom Cursor placed AFTER modals so they are ALWAYS visible on top -->
+  <div id="click-ripple-container" aria-hidden="true"></div>
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true"></div>
+  <div class="custom-cursor-dot" id="custom-cursor-dot" aria-hidden="true"></div>
+</body>
+</html>
